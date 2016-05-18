@@ -23,3 +23,4 @@ def find_agreement(x1, x2):
 def find_boundaries(x1, x2, i):
     right_boundary = find_agreement(x1[i:], x2[i:]) + i
     left_boundary = i - find_agreement(x1[i::-1], x2[i::-1]) + 1
+    return left_boundary, right_boundary
